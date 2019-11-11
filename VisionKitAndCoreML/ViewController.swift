@@ -19,7 +19,11 @@ class ViewController: UIViewController {
     }()
 
     var visionRequests = [VNRequest]()
-    let resultView = UILabel()
+    let resultView: UILabel = {
+        let label = UILabel()
+        label.textColor = .darkGray
+        return label
+    }()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,6 +39,40 @@ class ViewController: UIViewController {
             return
         }
         
+        /*
+         // 内置图像请求
+
+         // 图像基础请求
+         VNImageBasedRequest
+
+         // 单应图像配准
+         VNHomographicImageRegistrationRequest
+         // 图像配准
+         VNImageRegistrationRequest
+
+         // 水平倾斜度
+         VNDetectHorizonRequest
+         // 条形码识别
+         VNDetectBarcodesRequest
+         // 投影矩形检测
+         VNDetectRectanglesRequest
+         // 文本矩形检测
+         VNDetectTextRectanglesRequest
+         // 物体位置和范围检查
+         VNDetectedObjectObservation
+         // 面部特征检测
+         VNDetectFaceLandmarksRequest
+         // 面部区域检测
+         VNDetectFaceRectanglesRequest
+
+         // 追踪请求抽象基类
+         VNTrackingRequest
+         // 物体追踪
+         VNTrackObjectRequest
+         // 矩形物体追踪
+         VNTrackRectangleRequest
+         */
+
         let resnet50Request = VNCoreMLRequest(model: resnet50Model, completionHandler: handleClassifications)
         resnet50Request.imageCropAndScaleOption = .centerCrop
         visionRequests.append(resnet50Request)
@@ -57,7 +95,7 @@ class ViewController: UIViewController {
         guard let detectedRectangle = request.results?.first as? VNRectangleObservation else {
             return
         }
-        print("detectedRectangle: \(detectedRectangle.topLeft, detectedRectangle.topRight, detectedRectangle.bottomLeft, detectedRectangle.bottomRight)")
+        print("detectedRectangle: \((detectedRectangle.topLeft, detectedRectangle.topRight, detectedRectangle.bottomLeft, detectedRectangle.bottomRight))")
     }
 
     func handleRn1015(request: VNRequest, error: Error?) {

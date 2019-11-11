@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A103ACB6237906BB0084DAAC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A103ACB5237906BB0084DAAC /* ViewController.swift */; };
+		A10EC3EB236832AD0094D6A2 /* Inceptionv3.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = A10EC3EA236832AC0094D6A2 /* Inceptionv3.mlmodel */; };
 		A1ADF10820D3ACA100E47E07 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1ADF10720D3ACA100E47E07 /* AppDelegate.swift */; };
-		A1ADF10A20D3ACA100E47E07 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1ADF10920D3ACA100E47E07 /* ViewController.swift */; };
 		A1ADF10D20D3ACA100E47E07 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1ADF10B20D3ACA100E47E07 /* Main.storyboard */; };
 		A1ADF10F20D3ACA300E47E07 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1ADF10E20D3ACA300E47E07 /* Assets.xcassets */; };
 		A1ADF11220D3ACA300E47E07 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1ADF11020D3ACA300E47E07 /* LaunchScreen.storyboard */; };
@@ -20,9 +21,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A103ACB5237906BB0084DAAC /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A10EC3EA236832AC0094D6A2 /* Inceptionv3.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Inceptionv3.mlmodel; sourceTree = "<group>"; };
 		A1ADF10420D3ACA100E47E07 /* VisionKitAndCoreML.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VisionKitAndCoreML.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1ADF10720D3ACA100E47E07 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A1ADF10920D3ACA100E47E07 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A1ADF10C20D3ACA100E47E07 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A1ADF10E20D3ACA300E47E07 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A1ADF11120D3ACA300E47E07 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -64,13 +66,14 @@
 		A1ADF10620D3ACA100E47E07 /* VisionKitAndCoreML */ = {
 			isa = PBXGroup;
 			children = (
+				A103ACB5237906BB0084DAAC /* ViewController.swift */,
 				A1ADF10720D3ACA100E47E07 /* AppDelegate.swift */,
-				A1ADF10920D3ACA100E47E07 /* ViewController.swift */,
 				A1ADF11B20D3C9E700E47E07 /* VideoCaptureView.swift */,
 				A1ADF10B20D3ACA100E47E07 /* Main.storyboard */,
 				A1ADF10E20D3ACA300E47E07 /* Assets.xcassets */,
 				A1ADF11020D3ACA300E47E07 /* LaunchScreen.storyboard */,
 				A1ADF11320D3ACA300E47E07 /* Info.plist */,
+				A10EC3EA236832AC0094D6A2 /* Inceptionv3.mlmodel */,
 				A1E67B102294E5BA002BDE1C /* RN1015k500.mlmodel */,
 				A1ADF11920D3B59000E47E07 /* Resnet50.mlmodel */,
 				A1E67B142294FC18002BDE1C /* Hourglass.mlmodel */,
@@ -152,11 +155,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				A1E67B172294FC2D002BDE1C /* CPM.mlmodel in Sources */,
-				A1ADF10A20D3ACA100E47E07 /* ViewController.swift in Sources */,
 				A1ADF11A20D3B59000E47E07 /* Resnet50.mlmodel in Sources */,
 				A1ADF10820D3ACA100E47E07 /* AppDelegate.swift in Sources */,
 				A1E67B112294E5BA002BDE1C /* RN1015k500.mlmodel in Sources */,
+				A10EC3EB236832AD0094D6A2 /* Inceptionv3.mlmodel in Sources */,
 				A1E67B152294FC18002BDE1C /* Hourglass.mlmodel in Sources */,
+				A103ACB6237906BB0084DAAC /* ViewController.swift in Sources */,
 				A1ADF11C20D3C9E700E47E07 /* VideoCaptureView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
